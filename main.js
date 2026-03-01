@@ -1,3 +1,17 @@
+// ESTA PARTE SE AGREGA PARA QUE PHASER PUEDA USAR TU FUNCION crear()
+//Habia varios errores de sintaxis y tipograficos
+class EscenaPrincipal extends Phaser.Scene {
+
+    constructor() {
+        super("EscenaPrincipal");
+    }
+
+    create() {
+        crear.call(this);// llama tu funcion original sin modificarla
+    }
+
+}
+
 const config = {
     type: Phaser.AUTO,
     parent: "juego",
@@ -94,6 +108,7 @@ return
 }
 
 // NO ES NECESARIO ROMPRE LA FUNCION boton.setTint(colores[indiceColor]);
+
 
 
 
