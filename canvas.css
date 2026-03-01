@@ -1,4 +1,5 @@
 /* Fondo negro y centrado del juego */
+/*Habia varios errores de sintaxis en el codigo como falta ; */
 body{
     background-color: black;
     display: flex;
@@ -26,3 +27,4 @@ canvas {
     max-width: 100%;
     height: auto;
 }
+
