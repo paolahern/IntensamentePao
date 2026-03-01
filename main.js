@@ -1,21 +1,17 @@
 const config = {
+    type: Phaser.AUTO,
+    parent: "juego",
+//se agrego las lineas para un centrado automativo entre movil y compu
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        width: 800,
+        height: 600
+    },
 
-type: Phaser.AUTO,// es mayusculas 
-width: 360,
-height: 640,
-parent: "juego",
-backgroundColor: "#222",
-scale: {
-    mode: Phaser.Scale.FIT,
-    autoCenter: Phaser.Scale.CENTER_BOTH
-},
+    backgroundColor: "#4FC3F7",
 
-scene: {
-
-create: crear
-
-}
-
+    scene: [EscenaPrincipal]
 };
 
 const game = new Phaser.Game(config);
@@ -98,6 +94,7 @@ return
 }
 
 // NO ES NECESARIO ROMPRE LA FUNCION boton.setTint(colores[indiceColor]);
+
 
 
 
