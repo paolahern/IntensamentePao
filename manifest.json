@@ -1,16 +1,16 @@
 {
    "_comment": "nombre completo de la app",
-  "name": "Mi Juego Phaser", 
+  "name": "Intensamente Pao", 
     "_comment1": "nombre corto debajo del icono",
-  "short_name": "MiJuego",
+  "short_name": "Pao",
    "_comment2": "archivo que abre el juego",
   "start_url": "index.html",
     "_comment3": "sin barras de navegador",
   "display": "fullscreen",
     "_comment4": "color de fondo al iniciar",
-  "background_color": "#000000",
+  "background_color": "#87CEEB",
     "_comment5": "color del sistema",
-  "theme_color": "#000000",
+  "theme_color": "#4FC3F7",
     "_comment6": "orientación del juego",
   "orientation": "landscape",
   
@@ -26,4 +26,5 @@
     "type": "image/png"
   }
     ]
+
 }
