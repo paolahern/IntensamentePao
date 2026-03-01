@@ -1,19 +1,28 @@
+/* Fondo negro y centrado del juego */
 body{
-background-color: black;
-display: flex
-justify-content center;
-align-items: center;
-height: 100vh
-margin 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
+/* Contenedor del juego */
 #juego{
+    border: 3px solid white;
 
-border: 3px solid white;
-
+    /* hace que se adapte a pantallas pequeñas */
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
+/* Canvas del juego */
 canvas {
-  display: block;
-  margin: auto;
+    display: block;
+    margin: auto;
+
+    /* evita que se salga de la pantalla */
+    max-width: 100%;
+    height: auto;
 }
