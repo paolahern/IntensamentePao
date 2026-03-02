@@ -19,7 +19,19 @@
 <div id="juego"></div>
 
 <script src="main.js"></script>
+<!--Service Worker:
+Se cambió la ruta de "js/service-worker.js" a "service-worker.js"
+porque el archivo no estaba dentro de la carpeta "js",(se paso a github)
+sino en la raíz del proyecto.
 
+La ruta anterior daba error 404 (archivo no encontrado).
+Ahora apunta correctamente al archivo real.
+
+Función:
+Permite que el juego se guarde en caché,
+cargue más rápido,
+pueda funcionar sin internet (modo offline)
+y pueda instalarse como app en el celular. -->
 <script>
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service-worker.js")
@@ -31,6 +43,7 @@ if ("serviceWorker" in navigator) {
 </body>
 
 </html>
+
 
 
 
